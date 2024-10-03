@@ -1,42 +1,57 @@
+@import 'bulma/css/bulma.min.css';
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+@import "@fortawesome/fontawesome-free/css/fontawesome.min.css";
+@import "@fortawesome/fontawesome-free/css/brands.min.css";
+@import "@fortawesome/fontawesome-free/css/solid.min.css";
+@import "@fortawesome/fontawesome-free/css/regular.min.css";
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --mx-font: "Teko", sans-serif;
+  --mx-b-font: "Rubik", sans-serif;
+  --mx-base: #ffaa17;
+  --mx-base-rgb: 255, 170, 23;
+  --mx-black: #222429;
+  --mx-text: #686a6f;
+  --mx-background: #f0f0f0;
+
+  --bulma-link-base: var(--mx-base);
+  --bulma-link: var(--mx-base);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body * {
+  font-family: var(--mx-b-font);
+  color: var(--mx-black);
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--mx-font);
+  color: var(--mx-black);
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.orange {
+  color: var(--mx-base);
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.menu-list a.is-active {
+  background-color: var(--mx-base);
+}
+@media (prefers-color-scheme: light) {
+  i {
+    color: var(--mx-black);
   }
 }
+@media (prefers-color-scheme: dark) {
+  i {
+    color: var(--mx-background);
+  }
+}
+html[data-theme="dark"]  i {
+    color: var(--mx-background);
+  }
+  html[data-theme="light"]  i {
+    color: var(--mx-black);
+  }
