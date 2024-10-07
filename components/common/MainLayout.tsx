@@ -15,7 +15,7 @@ export const MainLayout = ({
   return (
     <div className="">
       <Navbar />
-      <div className={`columns ${styles.main}`}>
+      <div className={`columns is-mobile ${styles.main}`}>
         <div className="column is-one-fifth">
           <Menu basePath={basePath} menuItems={menuItems} />
         </div>

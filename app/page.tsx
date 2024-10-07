@@ -13,6 +13,10 @@ export default function Home() {
           <div className="container is-max-tablet">
             <h3 className="title">Bundle of free tools</h3>
             <h3 className="subtitle">Free Forever</h3>
+            <h3 className="subtitle is-hidden-tablet">
+              These tools are made to be used on computer, you will not be able
+              to use them properly on mobile.
+            </h3>
             <div className="grid is-gap-4 is-col-min-14">
               {availableTools.map((tool, i) => (
                 <Link
