@@ -3,6 +3,7 @@ import "./globals.css";
 import { Teko, Rubik } from "next/font/google";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "mexar.io",
@@ -83,8 +84,11 @@ export default function RootLayout({
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
       </head>
-      <body>{children}</body>
-      <ToastContainer />
+      <body>
+        {children}
+        <ToastContainer />
+        <Analytics />
+      </body>
     </html>
   );
 }
