@@ -13,33 +13,31 @@ export default function Home() {
           <div className="container is-max-tablet">
             <h3 className="title">Bundle of free tools</h3>
             <h3 className="subtitle">Free Forever</h3>
-            <div className="fixed-grid">
-              <div className="grid is-gap-4">
-                {availableTools.map((tool, i) => (
-                  <Link
-                    href={tool.base}
-                    key={i}
-                    className="cell"
-                    style={{ height: "100%" }}
+            <div className="grid is-gap-4 is-col-min-14">
+              {availableTools.map((tool, i) => (
+                <Link
+                  href={tool.base}
+                  key={i}
+                  className="cell"
+                  style={{ height: "100%" }}
+                >
+                  <div
+                    className={`box ${styles.singletool} ${
+                      tool.available ? "" : styles.disabled
+                    }`}
                   >
-                    <div
-                      className={`box ${styles.singletool} ${
-                        tool.available ? "" : styles.disabled
-                      }`}
-                    >
-                      <h4 className={`title ${styles.title}`}>
-                        <span className="icon">
-                          <i className={tool.icon}></i>
-                        </span>
-                        {tool.title}
-                      </h4>
-                      <h5 className={`subtitle ${styles.subtitle}`}>
-                        {tool.description}
-                      </h5>
-                    </div>
-                  </Link>
-                ))}
-              </div>
+                    <h4 className={`title ${styles.title}`}>
+                      <span className="icon">
+                        <i className={tool.icon}></i>
+                      </span>
+                      {tool.title}
+                    </h4>
+                    <h5 className={`subtitle ${styles.subtitle}`}>
+                      {tool.description}
+                    </h5>
+                  </div>
+                </Link>
+              ))}
             </div>
           </div>
           <footer
