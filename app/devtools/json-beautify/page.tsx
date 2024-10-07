@@ -11,7 +11,7 @@ const minifyJSON = (code: string) => {
   try {
     const parsed = JSON.parse(code);
     return JSON.stringify(parsed);
-  } catch (error) {
+  } catch {
     throw new Error("Invalid JSON");
   }
 };
@@ -21,7 +21,7 @@ const beautifyJSON = (code: string) => {
   try {
     const parsed = JSON.parse(code);
     return JSON.stringify(parsed, null, 2);
-  } catch (error) {
+  } catch {
     throw new Error("Invalid JSON");
   }
 };

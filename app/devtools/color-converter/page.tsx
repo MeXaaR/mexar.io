@@ -4,7 +4,6 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 import Color from "color";
-import { format } from "path";
 
 /**
  * ColorConverter Component

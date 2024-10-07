@@ -1,4 +1,4 @@
-export const FirstTool = () => {
+const FirstTool = () => {
   return <div className="">first tool Page</div>;
 };
 

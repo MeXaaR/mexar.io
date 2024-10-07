@@ -1,5 +1,4 @@
 "use client";
-import { TOOLTIP_ID } from "@/data/constants";
 import React from "react";
 import { PlacesType, Tooltip } from "react-tooltip";
 

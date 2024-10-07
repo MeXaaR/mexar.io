@@ -28,7 +28,7 @@ const beautifyXML = (code: string) => {
       content_unformatted: [], // Do not exclude any tags from formatting
       end_with_newline: true,
     });
-  } catch (error) {
+  } catch {
     throw new Error("Invalid XML");
   }
 };

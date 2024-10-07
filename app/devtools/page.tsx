@@ -1,6 +1,7 @@
+import React from "react";
 import JsonFormatter from "./json-beautify/page";
 
-export const Page = () => {
+const Page = () => {
   return <JsonFormatter />;
 };
 

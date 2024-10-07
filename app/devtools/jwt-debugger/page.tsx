@@ -153,9 +153,11 @@ const JWTDebugger = () => {
     }
 
     try {
-      jwt.verify(jwtToken, secretOrKey, { algorithms: [algorithm] });
+      jwt.verify(jwtToken, secretOrKey, {
+        algorithms: [algorithm as jwt.Algorithm],
+      });
       setVerificationResult("Signature is valid.");
-    } catch (error) {
+    } catch {
       setVerificationResult("Signature is invalid.");
     }
   };

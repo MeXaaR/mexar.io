@@ -1,4 +1,4 @@
-export const Page = () => {
+const Page = () => {
   return <div className="">Home page</div>;
 };
 

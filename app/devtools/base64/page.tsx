@@ -6,6 +6,7 @@ import usePersistedState from "@/utils/usePersistedState";
 import { GlobalStore, useGlobalStore } from "@/utils/useGlobalStore";
 import { toast } from "react-toastify";
 import { sample } from "./data";
+import Image from "next/image";
 
 /**
  * Base64ImageConverter Component
@@ -83,7 +84,7 @@ const Base64ImageConverter = () => {
     if (value) {
       const testImageSrc = `data:image/*;base64,${value}`;
       // Test if the Base64 string is valid
-      const img = new Image();
+      const img = new window.Image();
       img.onload = () => {
         setImageSrc(testImageSrc);
       };
@@ -334,7 +335,7 @@ const Base64ImageConverter = () => {
           }}
         >
           {imageSrc ? (
-            <img
+            <Image
               src={imageSrc}
               alt="Preview"
               style={{ maxWidth: "100%", maxHeight: "100%" }}
