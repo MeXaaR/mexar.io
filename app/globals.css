@@ -8,7 +8,7 @@
 :root {
   --mx-font: "Teko", sans-serif;
   --mx-b-font: "Rubik", sans-serif;
-  --mx-base: #ffaa17;
+  --mx-base: rgb(255, 129, 63);
   --mx-base-rgb: 255, 170, 23;
   --mx-black: #222429;
   --mx-text: #686a6f;
@@ -18,10 +18,10 @@
   --bulma-link: var(--mx-base);
 }
 
-body * {
+/* body * {
   font-family: var(--mx-b-font);
   color: var(--mx-black);
-}
+} */
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--mx-font);
@@ -36,7 +36,7 @@ a {
   text-decoration: none !important;
 }
 
-.menu-list a.is-active {
+a.is-active {
   background-color: var(--mx-base);
 }
 @media (prefers-color-scheme: light) {
@@ -52,6 +52,21 @@ a {
 html[data-theme="dark"]  i {
     color: var(--mx-background);
   }
-  html[data-theme="light"]  i {
-    color: var(--mx-black);
+html[data-theme="light"]  i {
+  color: var(--mx-black);
+}
+
+html[data-theme="dark"] .react-json-view {
+  background-color: rgb(20, 22, 26) !important;
+  padding: 5px;
+}
+
+
+  /* .react-json-view .string-value,
+  .react-json-view .data-type-label {
+    color: rgb(51, 255, 0);
   }
+
+   .react-json-view .variable-value {
+    color: rgb(255, 153, 0) !important;
+  } */

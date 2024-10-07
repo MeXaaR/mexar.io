@@ -4,11 +4,13 @@ export const menuItems = [
         tools: [
             {
                 title: "Home",
-                link: "/",
+                link: "",
+                icon: "fa-solid fa-home",
             },
             {
                 title: "Help",
                 link: "/help",
+                icon: "fa-solid fa-info",
             },
         ],
     },
@@ -18,10 +20,12 @@ export const menuItems = [
             {
                 title: "First tool",
                 link: "/first-tool",
+                icon: "fa-solid fa-cubes",
             },
             {
                 title: "Second tool",
                 link: "/second-tool",
+                icon: "fa-solid fa-cubes",
             }
         ],
     },

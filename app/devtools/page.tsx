@@ -1,5 +1,7 @@
+import JsonFormatter from "./json-beautify/page";
+
 export const Page = () => {
-  return <div className="">Home page</div>;
+  return <JsonFormatter />;
 };
 
 export default Page;

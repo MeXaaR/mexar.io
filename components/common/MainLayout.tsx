@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/Navbar";
+import { Navbar } from "@/components/common/Navbar";
 import styles from "./layout.module.css";
 import { Menu } from "./Menu";
 import { MenuItem } from "@/types/menu";
@@ -15,7 +15,7 @@ export const MainLayout = ({
   return (
     <div className="">
       <Navbar />
-      <div className={`columns ${styles.main}`}>
+      <div className={`columns is-mobile ${styles.main}`}>
         <div className="column is-one-fifth">
           <Menu basePath={basePath} menuItems={menuItems} />
         </div>

@@ -24,11 +24,11 @@ export const availableTools = [
         base: "/pdf",
         icon: "fa-solid fa-file-pdf",
     },
-    {
-        title: "Template",
-        description: "Template for every tool",
-        base: "/template",
-        icon: "fa-solid fa-file-code",
-        available: true
-    },
+    // {
+    //     title: "Template",
+    //     description: "Template for every tool",
+    //     base: "/template",
+    //     icon: "fa-solid fa-file-code",
+    //     available: true
+    // },
 ]

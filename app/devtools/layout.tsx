@@ -1,5 +1,5 @@
 import { menuItems } from "./menuItems";
-import MainLayout from "@/components/MainLayout";
+import MainLayout from "@/components/common/MainLayout";
 
 export const ToolLayout = ({
   children, // will be a page or nested layout
@@ -7,7 +7,7 @@ export const ToolLayout = ({
   children: React.ReactNode;
 }) => {
   return (
-    <MainLayout menuItems={menuItems} basePath="/template">
+    <MainLayout menuItems={menuItems} basePath="/devtools">
       {children}
     </MainLayout>
   );

@@ -1,5 +1,5 @@
 import { menuItems } from "./menuItems";
-import MainLayout from "@/components/MainLayout";
+import MainLayout from "@/components/common/MainLayout";
 
 export const ToolLayout = ({
   children, // will be a page or nested layout

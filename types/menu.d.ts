@@ -6,4 +6,6 @@ export type MenuItem = {
 export type SingleTool = {
     title: string;
     link: string;
+    icon: string;
+    disabled?: boolean
 }
