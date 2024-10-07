@@ -42,6 +42,21 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <footer
+            className="navbar is-fixed-bottom"
+            style={{ display: "flex", justifyContent: "center" }}
+          >
+            <p>
+              <strong>mexar</strong>
+              <strong className="orange">.</strong>
+              <strong>io</strong> by{" "}
+              <strong>
+                <a className="orange" target="_blank" href="https://mexar.fr">
+                  François Aubeut
+                </a>
+              </strong>
+            </p>
+          </footer>
         </main>
       </div>
     </>
