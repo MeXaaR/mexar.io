@@ -33,7 +33,7 @@ const JSONFormatter = () => {
       languageExtension={json}
       beautifyFunction={beautifyJSON}
       minifyFunction={minifyJSON}
-      sampleCode={`${sample}`}
+      sampleCode={JSON.stringify(sample)}
       inputPlaceholder="Enter your JSON code here..."
     />
   );
