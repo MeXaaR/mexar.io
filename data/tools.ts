@@ -11,6 +11,7 @@ export const availableTools = [
         description: "Everything to convert anything",
         base: "/conversions",
         icon: "fa-solid fa-exchange",
+        available: true
     },
     {
         title: "Pictures",
