@@ -6,8 +6,101 @@ import "react-toastify/dist/ReactToastify.css";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
-  title: "mexar.io",
-  description: "Bundle of free tools for everyone",
+  metadataBase: new URL("https://mexar.io"),
+  title: {
+    default: "mexar.io - Bundle of free tools for developers and designers",
+    template: "%s | mexar.io",
+  },
+  description:
+    "Discover these useful tools for developers and designers. Free tools for everyone. Forever",
+  keywords: [
+    "developer tools",
+    "online tools",
+    "web development",
+    "code formatter",
+    "JSON formatter",
+    "CSS formatter",
+    "HTML formatter",
+    "color converter",
+    "base64 converter",
+    "JWT debugger",
+    "free tools",
+    "mexar.io",
+  ],
+  authors: [{ name: "François AUBEUT" }],
+  creator: "François AUBEUT",
+  publisher: "mexar.fr",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://mexar.io",
+    siteName: "mexar.io",
+    title:
+      "Mexar.io - Bundle of small, useful tools for developers and designers",
+    description:
+      "Discover these useful tools for developers and designers. Free tools for everyone. Forever",
+    images: [
+      {
+        url: "https://mexar.io/images/logo-dark.png",
+        width: 1200,
+        height: 630,
+        alt: "mexar.io Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Mexar.io - Bundle of small, useful tools for developers and designers",
+    description:
+      "Discover these useful tools for developers and designers. Free tools for everyone. Forever",
+    creator: "@MeXaaR",
+    images: ["https://mexar.io/images/logo-dark.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  icons: {
+    icon: [{ url: "/favicon.ico" }, { url: "/icon.png", type: "image/png" }],
+    apple: [{ url: "/images/logo_dark.png", type: "image/png" }],
+    other: [
+      {
+        rel: "apple-touch-icon",
+        url: "/images/logo_dark.png",
+      },
+    ],
+  },
+  manifest: "/manifest.json",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+  },
+  verification: {
+    // google: "your-google-site-verification",
+    // yandex: "your-yandex-verification",
+    // yahoo: "your-yahoo-verification",
+    other: {
+      me: ["https://mexar.fr"],
+    },
+  },
+  category: "technology",
 };
 
 const rubik = Rubik({
